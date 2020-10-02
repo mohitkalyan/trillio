@@ -33,6 +33,12 @@ Grey dark 3: #999
   --shadow-dark: 0 2rem 6rem rgba($color: #000000, $alpha: .30);
 }
 
+$bp-largest: 75em;    // 1200/16=75
+$bp-large : 68.5em;   // 1100/16=68.5
+$bp-medium : 56.25em;   // 900/16= 56.25
+$bp-small : 37.5em;     //600/16=37.5
+$bp-smallest : 31.25em;  //500/16=31.25
+
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +53,10 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+
+  @media only screen and (max-width : 68.5em){
+    font-size: 50%;   // 8/16 50%  
+  }
 }
 
 body {
